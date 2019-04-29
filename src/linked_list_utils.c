@@ -34,7 +34,7 @@ void myfflush(void)
 
 /******************************************************************************
 * FUNCTION NAME	:	getIntegerInput
-* DESCRIPTION		:	This function takes string input from user
+* DESCRIPTION	:	This function takes string input from user
 * ARGUMENT		:	Self-descriptive
 * RETURNS		:	SUCCESS, if successful else, FAILURE
 *
@@ -73,7 +73,7 @@ int getStringInput(char **inputString)
 
 /******************************************************************************
 * FUNCTION NAME	:	getIntegerInput
-* DESCRIPTION		:	This function takes integer input from user
+* DESCRIPTION	:	This function takes integer input from user
 * ARGUMENT		:	Self-descriptive
 * RETURNS		:	SUCCESS, if successful else, FAILURE
 *
@@ -99,7 +99,7 @@ void getIntegerInput(unsigned int *input)
 
 /******************************************************************************
 * FUNCTION NAME	:	isValidId
-* DESCRIPTION		:	This function validates the employee Id
+* DESCRIPTION	:	This function validates the employee Id
 * ARGUMENT		:	Character pointer to the employee Id
 * RETURNS		:	SUCCESS, If Id is valid else FAILURE  		
 * 
@@ -132,7 +132,7 @@ int isValidId(char *id)
 
 /******************************************************************************
 * FUNCTION NAME	:	isValidName
-* DESCRIPTION		:	This function validates the employee name
+* DESCRIPTION	:	This function validates the employee name
 * ARGUMENT		:	Character pointer to the employee Id
 * RETURNS		:	SUCCESS, If Id is valid else FAILURE   		
 * 
@@ -159,8 +159,8 @@ int isValidName(char *name)
 
 /******************************************************************************
 * FUNCTION NAME	:	getEmployeeId
-* DESCRIPTION		:	This function takes employee Id from user as input 
-*				till the user enters a valid employee Id
+* DESCRIPTION	:	This function takes employee Id from user as input 
+*					till the user enters a valid employee Id
 * ARGUMENT		:	Parameters are self-descriptive.
 * RETURNS		:	SUCCESS, if successful else FAILURE   		
 * 
@@ -189,8 +189,8 @@ int getEmployeeId(char **inputString)
 
 /******************************************************************************
 * FUNCTION NAME	:	getEmployeeName
-* DESCRIPTION		:	This function takes employee name from user as 
-* 				input till the user enters a valid employee name
+* DESCRIPTION	:	This function takes employee name from user as 
+* 					input till the user enters a valid employee name
 * ARGUMENT		:	Parameters are self-descriptive.
 * RETURNS		:	SUCCESS, if successful else FAILURE   		
 * 
@@ -218,8 +218,8 @@ int getEmployeeName(char **inputString)
 
 /******************************************************************************
 * FUNCTION NAME	:	inputEmployeeDetails
-* DESCRIPTION		:	This function is used to input the employee details 
-*				from user
+* DESCRIPTION	:	This function is used to input the employee details 
+*					from user
 * ARGUMENT		:	Double pointer to the employee
 * RETURNS		:	SUCCESS, if successful else FAILURE   		
 * 
@@ -258,7 +258,7 @@ int inputEmployeeDetails(employee_t **emp)
 
 /******************************************************************************
 * FUNCTION NAME	:	createNode
-* DESCRIPTION		:	This function is used to create a new node
+* DESCRIPTION	:	This function is used to create a new node
 * ARGUMENT	 	:	Double pointer to the new node
 * RETURNS		:	SUCCESS, if successful else FAILURE  
 *
@@ -292,10 +292,10 @@ int createNode(listNode **newNode)
 
 /******************************************************************************
 * FUNCTION NAME	:	sortedInsert
-* DESCRIPTION		:	This function is used to insert a node in
-*				sorted order of employee id
+* DESCRIPTION	:	This function is used to insert a node in
+*					sorted order of employee id
 * ARGUMENT	 	:	Double pointer to the head of the list
-* RETURNS         	:	SUCCESS, if successful else FAILURE  					   
+* RETURNS       :	SUCCESS, if successful else FAILURE  					   
 *
 ******************************************************************************/
 int sortedInsert(listNode **head)
@@ -347,10 +347,10 @@ int sortedInsert(listNode **head)
 
 /******************************************************************************
 * FUNCTION NAME	:	insertAtBeg
-* DESCRIPTION		:	This function is used to insert a node to the 
-*				beginning of the list
+* DESCRIPTION	:	This function is used to insert a node to the 
+*					beginning of the list
 * ARGUMENT	 	:	Double pointer to the head of the list
-* RETURNS         	:	SUCCESS, if successful else FAILURE  					   
+* RETURNS       :	SUCCESS, if successful else FAILURE  					   
 *
 ******************************************************************************/
 int insertAtBeg(listNode **head)
@@ -379,8 +379,8 @@ int insertAtBeg(listNode **head)
 
 /******************************************************************************
 * FUNCTION NAME	:	insertEmployees
-* DESCRIPTION		:	This function takes number of employees from user 
-*				and inserts the employees data in the list
+* DESCRIPTION	:	This function takes number of employees from user 
+*					and inserts the employees data in the list
 * ARGUMENT		:	head pointer to the list
 * RETURNS		:	SUCCESS, if successful else FAILURE   		
 * 
@@ -410,7 +410,7 @@ int insertEmployees(listNode **head)
 
 /******************************************************************************
 * FUNCTION NAME	:	displayEmployee
-* DESCRIPTION		:	This function displays the details of an employee
+* DESCRIPTION	:	This function displays the details of an employee
 * ARGUMENT		:	pointer to the node that needs to be displayed
 * RETURNS		:	Nothing
 *					  
@@ -428,7 +428,7 @@ void displayEmployee(listNode *current)
 
 /******************************************************************************
 * FUNCTION NAME	:   displayList
-* DESCRIPTION		:   This function displays the complete list
+* DESCRIPTION	:   This function displays the complete list
 * ARGUMENT		:   pointer to head of the list
 * RETURNS		:   Nothing
 *					  
@@ -454,8 +454,8 @@ void displayList(listNode *head)
 
 /******************************************************************************
 * FUNCTION NAME	:	deleteNode
-* DESCRIPTION		:	This function deletes the node present at a given 
-*				position in the list
+* DESCRIPTION	:	This function deletes the node present at a given 
+*					position in the list
 * ARGUMENTS		:	Double pointer to the head node of the list
 * RETURNS		:	SUCCESS, if successful else FAILURE 
 *
@@ -510,10 +510,10 @@ int deleteNode(listNode **head)
 
 /******************************************************************************
 * FUNCTION NAME	:	searchByEmployeeName
-* DESCRIPTION		:	This function searches the list by employee name
+* DESCRIPTION	:	This function searches the list by employee name
 * ARGUMENT		:	Head pointer to list
 * RETURNS		:	SUCCESS, if employee is found successfully 
-*				else, Failure 
+*					else, Failure 
 *
 ******************************************************************************/
 int searchByEmployeeName(listNode *head)
@@ -545,10 +545,10 @@ int searchByEmployeeName(listNode *head)
 
 /******************************************************************************
 * FUNCTION NAME	:	playMagicGame
-* DESCRIPTION		:	This function gets a magic number from the 
-*				user repeatedly, deletes the node present 
-*				at that number and finally displays the
-*				winner employee 
+* DESCRIPTION	:	This function gets a magic number from the 
+*					user repeatedly, deletes the node present 
+*					at that number and finally displays the
+*					winner employee 
 * ARGUMENT		:	Double pointer to the head of the list
 * RETURNS		:	Nothing   		
 * 
@@ -570,8 +570,8 @@ void playMagicGame(listNode **head)
 
 /******************************************************************************
 * FUNCTION NAME	:	sortedMerge
-* DESCRIPTION		:	This function merges two lists in sorted manner
-*				by name
+* DESCRIPTION	:	This function merges two lists in sorted manner
+*					by name
 * ARGUMENT		:	head pointers of both lists
 * RETURNS		:	head pointer to the newly formed list   		
 * 
@@ -609,10 +609,10 @@ listNode* sortedMerge(listNode *a, listNode *b)
 
 /******************************************************************************
 * FUNCTION NAME	:	getMidNode
-* DESCRIPTION		:	This function finds the midpoint of the list
+* DESCRIPTION	:	This function finds the midpoint of the list
 * ARGUMENT		:	POinter to head of the list
 * RETURNS		:	If list is of even length, it returns pointer to
-*				(length / 2 + 1)th Node, else (length/2)th Node
+*					(length / 2 + 1)th Node, else (length/2)th Node
 *
 ******************************************************************************/
 void splitAtMid(listNode *head, listNode **a, listNode **b)
@@ -649,7 +649,7 @@ void splitAtMid(listNode *head, listNode **a, listNode **b)
 
 /******************************************************************************
 * FUNCTION NAME	:	sort
-* DESCRIPTION		:	This function sorts the list by employee id
+* DESCRIPTION	:	This function sorts the list by employee id
 * ARGUMENT		:	head pointer to the list
 * RETURNS		:	new head pointer to the list	
 * 
@@ -676,8 +676,8 @@ void sort(listNode **head)
 
 /******************************************************************************
 * FUNCTION NAME	:	freeList
-* DESCRIPTION		:	This function deallocates the memory used by the 
-*				list
+* DESCRIPTION	:	This function deallocates the memory used by the 
+*					list
 * ARGUMENT		:	Double pointer to the head of the list
 * RETURNS		:	Nothing   		
 * 
@@ -696,8 +696,8 @@ void freeList(listNode *head)
 
 /******************************************************************************
 * FUNCTION NAME	:	freeNode
-* DESCRIPTION		:	This function deallocates the memory used by the 
-*				given node
+* DESCRIPTION	:	This function deallocates the memory used by the 
+*					given node
 * ARGUMENT		:	Pointer to node that needs to be deallocated
 * RETURNS		:	Nothing		
 * 

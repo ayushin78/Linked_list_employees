@@ -6,7 +6,6 @@
  *                 
  *	AUTHOR         :    Ayushi Negi
  * 
- *	Copyright © 2018 Aricent  Group  All Rights Reserved
  *
 ********************************************************************************/
 
